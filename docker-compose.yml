@@ -28,7 +28,6 @@ services:
         volumes:
             - ${DOCKER_PATH}/radarr:/config
             - ${DATA}:/data
-            - ${CACHE_SSD}/downloads:/downloads
         ports:
             - "7878:7878"
         restart: unless-stopped
